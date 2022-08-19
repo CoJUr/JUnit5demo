@@ -1,6 +1,3 @@
-package test;
-
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -22,9 +19,20 @@ public class MyMathTest {
         int[] numbers = {1, 2, 3};
         int expected = 6;
         int actual = MyMath.sum(numbers);
+
         assertEquals(expected, actual);
 
     }
+    @Test
+    public void sum_with1number() {
+        int[] numbers = { 2};
+        int expected = 2;
+        int actual = MyMath.sum(numbers);
+
+        assertEquals(expected, actual);
+
+    }
+
 
 
 @Before

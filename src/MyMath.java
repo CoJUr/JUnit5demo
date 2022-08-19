@@ -1,2 +1,14 @@
-package PACKAGE_NAME;public class MyMath {
+public class MyMath {
+
+
+        static int sum(int[] numbers) {
+            int sum = 0;
+            for (int i : numbers) {
+                sum += i;
+            }
+
+            return sum;
+        }
+
+
 }
